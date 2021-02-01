@@ -1,0 +1,56 @@
+# Canal utilizado caso o jogador não digite nenhum dos comandos de chat
+Canal-Padrao: 'Local'
+
+Mencionar:
+  # Deixe true para utilziar o sistema de menção
+  Ativado: true
+  # Deixe true para tocar um aviso ao jogador
+  Som: true
+  # Nome do efeito que sera tocado
+  Name: "ENTITY_PLAYER_LEVELUP"
+
+Utilizar-Delay: true
+
+# Criação de canais ---------------------------------------------------------
+#
+# Para criar um canal você deve seguir os templates abaixo.
+# command: 'g'
+# chat-prefix = suporte a placeholders - {nick} e {msg} são do próprio plugin
+# Distancia:
+# -1 = Apenas quem tiver permissão poderá ver a mensagem
+# 999 = Todos do servidor poderam ver a mensagem
+# Outros = Jogadores no raio daquela distancia veram a mensagem
+# Sem Distancia = 999
+#
+# Criação de canais ---------------------------------------------------------
+
+Canais:
+  # Nome do canal é usado como permissao - yuchat.channel.<nome>
+  Global:
+    # Edite o comando necessário para o chat
+    command: 'g'
+    # Edite o template da mensagem do canal - suporte a placeholderapi
+    chat-prefix: '&7[g] {prefix}&f{nick}&f: &7{msg}'
+
+  # Canal local
+  Local:
+    command: 'l'
+    chat-prefix: '&e[l] {prefix}&f{nick}&f: &e{msg}'
+    # Distancia para o chat local
+    Distancia: 25
+
+
+  # Canal espião para staff utilize /espiar - yuchat.admin
+  Spy:
+    chat-prefix: '&8[s] {prefix}&f{nick}: {msg}'
+
+Lang:
+  SEM_PERMISSAO: '&cVocê não tem permissão para isso.'
+  FALHA_CHAT: '&eVocê deve digitar um mensagem.'
+  SOZINHO: '&e◆ Ninguém por perto para te ouvir ◆'
+  SEM_PERMISSAO_CHAT: '&cVocê não tem permissão para falar nesse chat.'
+
+# Permissões
+# yuchat.channel.cor - Permite utilizar cores e efeitos na mensagem
+# yuchat.channel.<nome> - Permite falar no canal, caso a distancia seja -1 apenas com a permissão poderá
+# ver a mensagem escrita no canal.
