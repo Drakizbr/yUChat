@@ -12,4 +12,4 @@ Plugin feitos por yDrakiz - Alguém precisa aprender boas maneiras hehe
 |/espiar |Veja as mensagens de todos os jogadores do servidor    |`yuchat.admin`			   |
 
 ## Sobre
-Plugin feito especialmente para OlympusMC - 1.16.4
+Plugin feito especialmente para OlympusMC - Apenas para a 1.16.4
