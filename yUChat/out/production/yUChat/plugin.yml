@@ -1,0 +1,14 @@
+name: yUChat
+author: yDrakiz
+version: 1.0.3
+main: com.dkz.chat.Main
+softdepend: [PlaceholderAPI]
+commands:
+  yuchat:
+    aliases: [yc]
+  tell:
+  espiar:
+    aliases: [spy]
+  r:
+  clearchat:
+    aliases: [cclear, chatc]
